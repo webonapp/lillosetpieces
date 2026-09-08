@@ -1,4 +1,4 @@
-ACF Fiorentina - Set Pieces App PWA v117
+Set Pieces App PWA v117
 
 COME USARLA SU IPAD
 1. Carica l'intera cartella su un hosting HTTPS.
@@ -27,8 +27,8 @@ NOVITÀ v117
 
 
 NOVITÀ v117 - BACKUP UNIVERSALE
-- Nuovo formato .acf compatibile con Mac, iPad, Safari e Chrome
-- Importazione di .acf, .setpieces, .acfbackup, .json e .txt
+- Nuovo formato . compatibile con Mac, iPad, Safari e Chrome
+- Importazione di ., .setpieces, .backup, .json e .txt
 - Compatibilità con tutti i backup precedenti
 - Lettura UTF-8 robusta tramite ArrayBuffer
 - Supporto ai file rinominati o salvati tramite AirDrop/iCloud
@@ -53,7 +53,7 @@ CORREZIONE v141 - POSIZIONI INVARIATE
 NOVITÀ v141
 - Dimensione predefinita delle maglie: 90%
 - Trascinamento più fluido di pallone e testi
-- Stessa anagrafica completa per Fiorentina e avversari
+- Stessa anagrafica completa per Squadra e avversari
 - Cursore Tratteggio per frecce dritte e curve
 - Punta delle frecce sempre piena
 - Controllo completo della sintassi JavaScript
@@ -75,7 +75,7 @@ NOVITÀ v141
 
 
 NOVITÀ v141
-- Flag Numero nel cerchio per Fiorentina e avversari
+- Flag Numero nel cerchio per Squadra e avversari
 - Opzione Avversari: linea tratteggiata da compilare a penna
 - Navigazione schema precedente/successivo in Campo intero
 - Tratteggio delle frecce corretto
@@ -170,7 +170,7 @@ NOVITÀ v141 - MODALITÀ PANCHINA E SPOGLIATOIO
 - Pulsante SPOGLIATOIO a destra di Sostituzione
 - PANCHINA mostra cognome, cerchio bianco e numero su tutti i giocatori
 - SPOGLIATOIO nasconde cognome e numero, lasciando soltanto il cerchio bianco
-- Funzione applicata sia a Fiorentina sia agli avversari
+- Funzione applicata sia a Squadra sia agli avversari
 - Stato attivo evidenziato graficamente
 - Preferenze incluse automaticamente nei backup
 
@@ -235,7 +235,7 @@ FIX v141
 NOVITÀ v141
 - Pulsante Sostituzione spostato al centro della barra superiore
 - Rimossa la riga dedicata precedente
-- Linea nei selezionati disponibile per Fiorentina e avversari
+- Linea nei selezionati disponibile per Squadra e avversari
 - In SPOGLIATOIO: niente nome, niente numero e niente cerchio bianco
 - In SPOGLIATOIO: linea continua sotto tutte le maglie
 - Linea sotto la maglia ridotta del 35%
@@ -243,7 +243,7 @@ NOVITÀ v141
 
 NOVITÀ v144
 - Pulsante Sostituzione abbassato ulteriormente del 35%
-- Linea sotto le maglie Fiorentina ridotta del 40%
+- Linea sotto le maglie Squadra ridotta del 40%
 - Linea avversari lasciata invariata
 - Nessuna modifica alla logica dell'app
 
@@ -252,7 +252,7 @@ NOVITÀ v144
 - Pulsante Sostituzione abbassato ulteriormente del 30%
 - Linea sotto le maglie abbassata di circa 7 px
 - Colore linea aggiornato a #D0CFD7
-- Lunghezze linea Fiorentina e avversari mantenute come in v143
+- Lunghezze linea Squadra e avversari mantenute come in v143
 
 
 FIX v146
@@ -565,7 +565,7 @@ v173 - motore unico selezione/spostamento
 v174 - Nuovo schema
 - Aggiunto pulsante + Nuovo schema sopra Duplica / Elimina.
 - Apre una piccola finestra con due percorsi: Schema vuoto oppure copia da Layout.
-- I Layout vengono letti direttamente dalla cartella Layout del Database ACF.
+- I Layout vengono letti direttamente dalla cartella Layout del Database.
 - La copia di un Layout aggiunge un nuovo schema senza sostituire il progetto corrente.
 - Posizioni e override dei giocatori vengono riallineati alla rosa corrente per nome/numero.
 - Frecce, forme, palloni, testi e note del Layout vengono copiati nel nuovo schema.
@@ -735,7 +735,7 @@ v198 - bugfix e pulizia generale
 
 
 v199 - deep stability bugfix
-- Migrazione rosa legacy resa canonica: usa FIORENTINA_PRESET, niente più vecchio Oulai 32/Oulaï.
+- Migrazione rosa legacy resa canonica: usa HOME_PRESET, niente più vecchio Oulai 32/Oulaï.
 - Tutti i fallback dimensione giocatori portati al 75%.
 - Rimosso il collegamento DOM al vecchio menu VISTA eliminato.
 - Progetto corrente non viene più persistito automaticamente in localStorage: refresh manuale = reset.
@@ -743,7 +743,7 @@ v199 - deep stability bugfix
 - Import backup normalizzato con lo schema corrente e non salvato automaticamente come progetto persistente.
 - Navigazione fullscreen non incrementa più il contatore modifiche.
 - Rimossa la save beforeunload che generava salvataggi/dirty count non intenzionali.
-- Archivio/Database ACF resta persistente.
+- Archivio/Database resta persistente.
 - Audit JS, Service Worker, ID e listener completato.
 
 
@@ -807,7 +807,7 @@ v208 - deep stability fixes
 v209 - daily-use stability
 - Esporta backup non incrementa più il contatore modifiche; Annulla su iPad non crea falso stato dirty.
 - Import backup azzera Undo/Redo, transazioni e clipboard per impedire ritorni al progetto precedente.
-- Apri/Usa copia dal Database ACF normalizza e valida il progetto prima del caricamento e azzera la history tra progetti.
+- Apri/Usa copia dal Database normalizza e valida il progetto prima del caricamento e azzera la history tra progetti.
 - Recovery dopo aggiornamento PWA salta le migrazioni legacy distruttive della rosa e preserva eventuali home player personalizzati.
 - Stato BACKUP (verde/rosso e conteggio) preservato durante il solo reload tecnico da aggiornamento.
 - Un aggiornamento PWA in attesa non viene attivato automaticamente se ci sono modifiche reali non ancora protette da backup.

@@ -1,5 +1,5 @@
 const APP_VERSION = "278";
-const CACHE_NAME = `acf-set-pieces-v${APP_VERSION}`;
+const CACHE_NAME = `set-pieces-v${APP_VERSION}`;
 
 const APP_SHELL = [
   "./",
@@ -58,7 +58,7 @@ self.addEventListener("activate", event => {
     caches.keys().then(keys =>
       Promise.all(
         keys
-          .filter(key => key.startsWith("acf-set-pieces-v") && key !== CACHE_NAME)
+          .filter(key => key.startsWith("set-pieces-v") && key !== CACHE_NAME)
           .map(key => caches.delete(key))
       )
     ).then(() => self.clients.claim())
